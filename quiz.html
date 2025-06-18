@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="section-quiz" id="tela-quiz">
+        <section class="fluxo">
+          <h4>
+            <span id="num-pergunta-atual">1</span>/<span id="total-perguntas"
+              >total</span
+            >
+          </h4>
+          <a href="index.html"
+            ><img src="./img/close.png" alt="icone fechar" class="img-close"
+          /></a>
+        </section>
+        <section class="campo-pergunta">
+          <h3 id="caixa-pergunta">
+            Pergunta lasjdlfjalsjdlfjlasjdflkj asl dfjlasjdlf alsd flajs ldjf
+            lasdf jljlj
+          </h3>
+        </section>
+        <section id="respostas" class="campo-resposta"></section>
+
+        <section class="tempo">
+          <p id="box-timer">
+            <img src="./img/timer.png" alt="icone relogio" /><span id="timer"
+              >7 s</span
+            >
+          </p>
+          <p class="btn-continuar">Continuar</p>
+        </section>
+      </section>
+
+      <!-- ################## RESULTADOS ########################### -->
+
+      <section id="resultados">
+        <h2 class="campo-pergunta">Fim de jogo!</h2>
+        <div>
+          <p>
+            Total de acertos: <span id="pontuacao">x</span>/<span id="total"
+              >total</span
+            >
+          </p>
+          <p>Tempo médio: <span id="tempo-medio">x</span>s</p>
+        </div>
+        <a href="quiz.html" style="width: 40%"
+          ><button class="btn-option-D" id="reiniciar" onclick="reiniciar()">
+            Jogar novamente
+          </button></a
+        >
+        <a href="index.html" style="width: 40%"
+          ><button class="btn-option-C" onclick="sair()">Sair</button></a
+        >
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
